@@ -22,6 +22,9 @@ public class LCP{
 		return min;
 	}
 	private String commonPrefix(String[] arr){
+		if(arr.length == 0){
+			return "";
+		}
 		int len = findMinLength(arr);
 		int low = 0, high = len;
 		while(low <= high){
